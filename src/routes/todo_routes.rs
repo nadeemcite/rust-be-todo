@@ -1,6 +1,6 @@
 // src/routes.rs
 use actix_web::web;
-use crate::handlers::*;
+use crate::handlers::todo_handlers::{get_todos, create_todo, get_todo, update_todo, delete_todo, toggle_complete};
 
 pub fn config(cfg: &mut web::ServiceConfig) {
     cfg.service(

@@ -1,5 +1,5 @@
 use rusqlite::{Connection, params, Result};
-use crate::models::{Todo, TodoInput};
+use crate::models::todos::{Todo, TodoInput};
 
 pub fn init_db() -> Result<Connection> {
     let conn = Connection::open("my_todo_app.db")?;
